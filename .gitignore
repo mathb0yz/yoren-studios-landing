@@ -1,0 +1,32 @@
+# Dependencias
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Produccion
+/build
+
+# Variables de entorno (NUNCA subir el .env real)
+.env
+.env.local
+.env*.local
+
+# Datos del backend (mensajes guardados localmente)
+/data/*.json
+!/data/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/

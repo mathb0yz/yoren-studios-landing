@@ -1,0 +1,10 @@
+# robots.txt - Yoren Studios
+# Permite indexar todo el sitio y apunta al sitemap.
+
+User-agent: *
+Allow: /
+
+# Bloquea las rutas de API (no deben indexarse).
+Disallow: /api/
+
+Sitemap: https://yorenstudios.com/sitemap.xml
