@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{site.name} — Bots, apps y sitios web</title>
+        <title>{site.name} — Landing pages y tiendas online</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={site.description} />
         <meta name="theme-color" content="#0b0b0d" />
-        <meta name="keywords" content="bots de discord, desarrollo de bots, aplicaciones web, sitios web, agencia de desarrollo" />
+        <meta name="keywords" content="landing pages, tiendas online, sitios web, diseño web, agencia de desarrollo" />
         <link rel="canonical" href={site.url} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={site.name} />
