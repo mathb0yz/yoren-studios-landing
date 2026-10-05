@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{site.name} — Landing pages y tiendas online</title>
+        <title>{`${site.name} — Landing pages y tiendas online`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={site.description} />
         <meta name="theme-color" content="#0b0b0d" />
