@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative pt-28 pb-6 sm:pt-36">
+    <section id="top" className="relative pt-24 pb-8 sm:pt-28">
       <div className="mx-auto max-w-6xl px-6">
         <h1 className="font-display max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.2rem]">
           Hacemos que tu negocio se vea online.

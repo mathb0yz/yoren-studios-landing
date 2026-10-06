@@ -22,7 +22,7 @@ export default function Logo({ className, withText = true }: LogoProps) {
     <span className={`inline-flex items-center gap-2.5 ${className ?? ""}`}>
       <LogoMark className="h-8 w-8" />
       {withText && (
-        <span className="font-display text-[17px] font-bold tracking-tight text-zinc-900">
+        <span className="font-display text-[17px] font-bold tracking-tight text-white">
           Yoren Studios
         </span>
       )}

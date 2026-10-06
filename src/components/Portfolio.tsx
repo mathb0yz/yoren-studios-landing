@@ -40,6 +40,8 @@ function Preview({ p, compact = false }: { p: Project; compact?: boolean }) {
           <img
             src={p.shot}
             alt={`Captura de ${p.title}`}
+            width={1600}
+            height={1024}
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
           />
@@ -201,7 +203,6 @@ export default function Portfolio() {
         <div className="mt-8 border border-white/10 bg-gradient-to-br from-white/[0.06] to-transparent p-6 sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
-              <p className="mono-label">/ respuesta rapida</p>
               <h3 className="font-display mt-1 text-xl font-bold text-white">
                 ¿Querés que tu negocio se vea así? Contanos en una línea
               </h3>
@@ -209,7 +210,9 @@ export default function Portfolio() {
             <a href="#contacto" className="btn btn-ghost !py-2.5 !text-xs">Formulario completo</a>
           </div>
           <form onSubmit={onSubmit} className="mt-4 flex flex-col gap-2 sm:flex-row">
+            <label htmlFor="quickMsg" className="sr-only">Contanos en una línea qué necesitás</label>
             <input
+              id="quickMsg"
               value={quick}
               onChange={e => setQuick(e.target.value)}
               placeholder="Ej: necesito una landing para mi negocio…"

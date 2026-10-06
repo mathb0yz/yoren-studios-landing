@@ -114,27 +114,47 @@ export default function Contact() {
 
           <div className="lg:col-span-7">
             <form onSubmit={onSubmit} className="border border-white/10 bg-[#121214] p-6">
-              <div className="space-y-3">
-                <input
-                  name="name"
-                  required
-                  placeholder="Tu nombre"
-                  className="w-full border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
-                />
-                <input
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="tu@email.com"
-                  className="w-full border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
-                />
-                <textarea
-                  name="message"
-                  required
-                  rows={4}
-                  placeholder="¿Qué tipo de sitio necesitás?"
-                  className="w-full resize-none border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
-                />
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="ct-name" className="mb-1.5 block text-sm font-medium text-zinc-300">
+                    Tu nombre
+                  </label>
+                  <input
+                    id="ct-name"
+                    name="name"
+                    required
+                    autoComplete="name"
+                    placeholder="Ej: Martín"
+                    className="w-full border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="ct-email" className="mb-1.5 block text-sm font-medium text-zinc-300">
+                    Tu email
+                  </label>
+                  <input
+                    id="ct-email"
+                    name="email"
+                    type="email"
+                    required
+                    autoComplete="email"
+                    placeholder="Ej: martin@minegocio.com"
+                    className="w-full border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="ct-msg" className="mb-1.5 block text-sm font-medium text-zinc-300">
+                    Qué necesitás
+                  </label>
+                  <textarea
+                    id="ct-msg"
+                    name="message"
+                    required
+                    rows={4}
+                    placeholder="Ej: tengo un local y quiero vender por la web"
+                    className="w-full resize-none border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-white/40"
+                  />
+                </div>
               </div>
               <div className="hidden"><input name="company" tabIndex={-1} autoComplete="off" /></div>
               <button className="btn btn-primary mt-4 w-full" disabled={status === "sending"}>
